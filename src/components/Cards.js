@@ -25,10 +25,6 @@ class Cards extends Component {
         const {data} =this.state;
         return (
             <section className={styles.container}>
-                {/* <Card image={Iphone} name="iphone X" price="600 $"/>
-                <Card image={Iphone} name="iphone 11" price="450 $"/>
-                <Card image={Iphone} name="iphone 10 pro" price="600 $"/>
-                <Card image={Iphone} name="iphone 13" price="600 $"/> */}
                 {data.map( item => <Card key={v4()} image={item.image} name= {item.name} price= {item.price} />  )}
             </section>
         );
