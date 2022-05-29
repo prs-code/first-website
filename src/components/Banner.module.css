@@ -1,0 +1,25 @@
+.container {
+    width: auto;
+    position: relative;
+}
+
+.container img {
+    width: 100%;
+}
+.textContainer {
+    position: absolute;
+    top: 10px;
+    left: 8%;
+    letter-spacing: 3px;
+    line-height: 100px;
+    color: #313a41;
+}
+
+.textContainer h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.textContainer p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}

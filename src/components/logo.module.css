@@ -1,0 +1,19 @@
+.container {
+    text-align: center;
+    margin: 30px;
+}
+.container h3 {
+    color: #313A41;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.container div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container div img {
+    width: 300px;
+    margin: 100px 0;
+}

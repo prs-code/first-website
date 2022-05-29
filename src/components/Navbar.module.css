@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #d7dae3;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+.list li{
+    padding: 15px;
+    cursor: pointer;
+    color: #313a41;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+}
+.list li::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 6px;
+    left: 0;
+    background-color: #313a41;
+    transform-origin: bottom center;
+    transition: transform .2s ease-out;
+    
+}
+.list li:hover::after {
+    transform: scaleX(0.7);
+    transform-origin: bottom center;
+}
+.logo {
+    width: 80px;
+    height:80px;
+    padding: 5px;
+    border-radius: 50%;
+    margin: auto 0;
+}

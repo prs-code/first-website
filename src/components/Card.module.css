@@ -1,0 +1,45 @@
+.container img {
+    width: 250px;
+}
+.container {
+    margin: 10px;
+    background-color: #ececec;
+    border-radius: 10px;
+    -webkit-box-shadow: -6px 9px 19px -2px rgba(0,0,0,0.5); 
+    box-shadow: -6px 9px 19px -2px rgba(0,0,0,0.5);
+}
+.container h3 {
+    color: #313A41;
+    margin: 20px 40px 20px;
+    font-size: 25px;
+}
+.container p {
+    margin: 0 40px 30px;
+    background-color: rgb(10, 145, 46);
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+}
+.counter {
+    display: flex;
+    align-items: center;
+    border-top: 1px silver solid;
+}
+.counter img {
+    width: 20px;
+    margin: 20px;
+    cursor:pointer;
+}
+.counter span {
+    background-color: #313A41;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.deactive {
+    opacity: .5;
+}
