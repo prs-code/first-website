@@ -36,6 +36,10 @@
     transform: scaleX(0.7);
     transform-origin: bottom center;
 }
+.list li a {
+    text-decoration: none;
+    color: #313a41;
+}
 .logo {
     width: 80px;
     height:80px;
