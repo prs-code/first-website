@@ -25,7 +25,7 @@ class Cards extends Component {
         const {data} =this.state;
         return (
             <section className={styles.container}>
-                {data.map( item => <Card key={v4()} image={item.image} name= {item.name} price= {item.price} />  )}
+                {data.map( item => <Card key={v4()} image={item.image} name= {item.name} price= {item.price} /> )}
             </section>
         );
     }
