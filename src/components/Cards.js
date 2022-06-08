@@ -13,10 +13,10 @@ class Cards extends Component {
         super();
         this.state = {
             data: [
-                {image: Iphone, name:"iphone X", price:"600 $" },
-                {image: Iphone, name:"iphone 11", price:"450 $"},
-                {image: Iphone, name:"iphone 10 pro", price:"600 $"},
-                {image: Iphone, name:"iphone 13", price:"600 $"},
+                {id: 1, image: Iphone, name:"iphone X", price:"600 $" },
+                {id: 2, image: Iphone, name:"iphone 11", price:"450 $"},
+                {id: 3, image: Iphone, name:"iphone 10 pro", price:"600 $"},
+                {id: 4, image: Iphone, name:"iphone 13", price:"600 $"},
 
             ]
         };
@@ -25,7 +25,12 @@ class Cards extends Component {
         const {data} =this.state;
         return (
             <section className={styles.container}>
-                {data.map( item => <Card key={v4()} image={item.image} name= {item.name} price= {item.price} /> )}
+                {data.map( item => <Card 
+                key={v4()} 
+                image= {item.image} 
+                name= {item.name} 
+                price= {item.price} 
+                id= {item.id} /> )}
             </section>
         );
     }

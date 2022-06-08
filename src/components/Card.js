@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import styles from './Card.module.css';
 
@@ -31,12 +32,14 @@ class Card extends Component {
     };
 
     render() {
-        const {image, name, price} = this.props;
+        const {image, name, price, id} = this.props;
         const {counter} = this.state;
         return (
             <div className={styles.container}>
                 <img src={image} alt='product-mobile'/>
-                <h3>{name}</h3>
+                <h3>
+                    <Link to={`/products/${id}`}>{name}</Link>
+                </h3>
                 <p>{price} {counter ? `* ${counter} = ${counter * Number(price.split(" ")[0])} $` : ""}</p>
                 <div className={styles.counter}>
                     <img className={!this.state.counter ? styles.deactive : ""} src={Down} alt="arrow" onClick={this.downCounter} />
